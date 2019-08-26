@@ -1,6 +1,6 @@
 # MHATB
 
-A Flutter project to test some functinality.
+A Flutter project to test some functionality.
 
 ## Real Project.
 
