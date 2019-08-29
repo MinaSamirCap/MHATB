@@ -6,6 +6,10 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        drawer: Drawer(
+            child: Center(
+              child: Text('MinaSamir'),
+            )),
         appBar: AppBar(
           title: Text(APP_NAME),
         ),
