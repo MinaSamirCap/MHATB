@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mhatb/screens/HomeScreen.dart';
+import 'package:mhatb/screens/SplashScreen.dart';
 
 const APP_NAME = "MHATB";
 
@@ -16,7 +17,10 @@ class MyApp extends StatelessWidget {
         accentColor: const Color(0xffc40a3c),
         //primaryColor: Colors.amber,
       ),
-      home: HomeScreen(),
+      home: SplashScreen(),
+      routes: {
+        HomeScreen.ROUTE_NAME: (ctx) => HomeScreen(),
+      },
     );
   }
 }

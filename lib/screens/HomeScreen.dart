@@ -3,13 +3,15 @@ import 'package:mhatb/main.dart';
 import 'package:mhatb/utils/resources.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const ROUTE_NAME = '/home-screen';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         drawer: Drawer(
             child: Center(
-              child: Text('MinaSamir'),
-            )),
+          child: Text('MinaSamir'),
+        )),
         appBar: AppBar(
           title: Text(APP_NAME),
         ),
