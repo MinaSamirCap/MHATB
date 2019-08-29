@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:mhatb/main.dart';
 import 'package:mhatb/utils/resources.dart';
+import 'package:flutter/services.dart';
 
 class HomeScreen extends StatelessWidget {
   static const ROUTE_NAME = '/home-screen';
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
     return Scaffold(
         drawer: Drawer(
             child: Center(
