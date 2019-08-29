@@ -8,6 +8,8 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    /// to show status bar and navigation bar again
     SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
     return Scaffold(
         drawer: Drawer(

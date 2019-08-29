@@ -22,7 +22,18 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
+    /// to hide only bottom bar:
+    /// SystemChrome.setEnabledSystemUIOverlays ([SystemUiOverlay.top]);
+
+    /// to hide only status bar:
+    /// SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom]);
+
+    /// to show status bar and navigation bar again
+    /// SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
+
+    /// to hide both:
     SystemChrome.setEnabledSystemUIOverlays([]);
+
     return Stack(
       children: <Widget>[
         Container(
