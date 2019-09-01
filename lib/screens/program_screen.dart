@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/program_widget.dart';
 import '../utils/resources.dart';
 import '../utils/ui.dart';
 
@@ -52,7 +53,7 @@ class _ProgramScreenState extends State<ProgramScreen>
             child: TabBarView(
               controller: tabContrellor,
               children: [
-                Icon(Icons.directions_car),
+                ProgramWidget(DAY_1_MAP),
                 Icon(Icons.directions_transit),
                 Icon(Icons.directions_bike),
               ],
