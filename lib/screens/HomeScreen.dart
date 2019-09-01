@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mhatb/main.dart';
 import 'package:flutter/services.dart';
-import '../widgets/QuoteWidget.dart';
+import 'package:mhatb/utils/sizes.dart';
+import 'package:mhatb/widgets/action_button_widget.dart';
+import '../widgets/quote_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   static const ROUTE_NAME = '/home-screen';
@@ -21,12 +23,28 @@ class HomeScreen extends StatelessWidget {
         body: Column(
           children: <Widget>[
             QuoteWidget(),
-            Text('Mina Samir'),
-            RaisedButton(
-              onPressed: null,
-              child: Text('Button'),
-            )
+            Container(
+                margin: const EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: MARGIN_SIZE_10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    ActionButtonWidget(openProgramScreen, Colors.yellow, 'Pro1'),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    ActionButtonWidget(openAnotherScreen, Colors.amber, 'Pro2')
+                  ],
+                )),
           ],
         ));
+  }
+
+  void openProgramScreen() {
+    print("mina");
+  }
+
+  void openAnotherScreen() {
+    print("monmon");
   }
 }
