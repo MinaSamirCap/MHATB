@@ -17,7 +17,7 @@ class _ProgramScreenState extends State<ProgramScreen>
   @override
   void initState() {
     super.initState();
-    tabContrellor = TabController(initialIndex: 1, vsync: this, length: 3);
+    tabContrellor = TabController(initialIndex: 2, vsync: this, length: 3);
   }
 
   @override
@@ -53,9 +53,9 @@ class _ProgramScreenState extends State<ProgramScreen>
             child: TabBarView(
               controller: tabContrellor,
               children: [
+                ProgramWidget(DAY_3_MAP),
+                ProgramWidget(DAY_2_MAP),
                 ProgramWidget(DAY_1_MAP),
-                Icon(Icons.directions_transit),
-                Icon(Icons.directions_bike),
               ],
             ),
           ),
