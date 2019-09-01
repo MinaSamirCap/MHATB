@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mhatb/main.dart';
 import 'package:flutter/services.dart';
+import '../utils/ui.dart';
 import '../screens/program_screen.dart';
 import '../utils/colors.dart';
 import '../utils/resources.dart';
@@ -20,9 +21,7 @@ class HomeScreen extends StatelessWidget {
             child: Center(
           child: Text('MinaSamir'),
         )),
-        appBar: AppBar(
-          title: Text(APP_NAME),
-        ),
+        appBar: getAppBar(APP_NAME),
         body: Column(
           children: <Widget>[
             QuoteWidget(),
