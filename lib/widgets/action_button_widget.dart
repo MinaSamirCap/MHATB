@@ -16,8 +16,14 @@ class ActionButtonWidget extends StatelessWidget {
         child: RaisedButton(
           shape: RoundedRectangleBorder(borderRadius: RADIUS_CIRCLE_15),
           color: buttonColor,
-          onPressed: function,
-          child: Text(buttonText),
+          onPressed: () => function(context),
+          child: Text(
+            buttonText,
+            style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: FONT_SIZE_22),
+          ),
         ),
       ),
     );

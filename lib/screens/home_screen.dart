@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:mhatb/main.dart';
 import 'package:flutter/services.dart';
-import 'package:mhatb/utils/sizes.dart';
-import 'package:mhatb/widgets/action_button_widget.dart';
+import '../screens/program_screen.dart';
+import '../utils/colors.dart';
+import '../utils/resources.dart';
+import '../utils/sizes.dart';
+import '../widgets/action_button_widget.dart';
 import '../widgets/quote_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -29,11 +32,11 @@ class HomeScreen extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    ActionButtonWidget(openProgramScreen, Colors.yellow, 'Pro1'),
+                    ActionButtonWidget(openProgramScreen, color1, 'Pro1'),
                     SizedBox(
                       width: 10,
                     ),
-                    ActionButtonWidget(openAnotherScreen, Colors.amber, 'Pro2')
+                    ActionButtonWidget(openAnotherScreen, color3, PROGRAM)
                   ],
                 )),
           ],
@@ -44,7 +47,7 @@ class HomeScreen extends StatelessWidget {
     print("mina");
   }
 
-  void openAnotherScreen() {
-    print("monmon");
+  void openAnotherScreen(BuildContext cxt) {
+    Navigator.of(cxt).pushNamed(ProgramScreen.ROUTE_NAME);
   }
 }

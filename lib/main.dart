@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mhatb/screens/HomeScreen.dart';
-import 'package:mhatb/screens/SplashScreen.dart';
+import './screens/home_screen.dart';
+import './screens/splash_screen.dart';
+import './screens/program_screen.dart';
 
 const APP_NAME = "MHATB";
 
@@ -11,7 +12,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-
     /// to force protrait mode only for app ...
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return MaterialApp(
@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
       home: SplashScreen(),
       routes: {
         HomeScreen.ROUTE_NAME: (ctx) => HomeScreen(),
+        ProgramScreen.ROUTE_NAME: (ctx) => ProgramScreen(),
       },
     );
   }
