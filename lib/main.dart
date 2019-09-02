@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:mhatb/screens/main_song_screen.dart';
 import './screens/home_screen.dart';
 import './screens/splash_screen.dart';
 import './screens/program_screen.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
       routes: {
         HomeScreen.ROUTE_NAME: (ctx) => HomeScreen(),
         ProgramScreen.ROUTE_NAME: (ctx) => ProgramScreen(),
+        MainSongScreen.ROUTE_NAME: (ctx) => MainSongScreen(),
       },
     );
   }

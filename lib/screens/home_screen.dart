@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mhatb/main.dart';
 import 'package:flutter/services.dart';
+import 'package:mhatb/screens/main_song_screen.dart';
 import '../utils/ui.dart';
 import '../screens/program_screen.dart';
 import '../utils/colors.dart';
@@ -31,22 +32,22 @@ class HomeScreen extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    ActionButtonWidget(openProgramScreen, color1, 'Pro1'),
+                    ActionButtonWidget(openProgramScreen, color3, PROGRAM),
                     SizedBox(
                       width: 10,
                     ),
-                    ActionButtonWidget(openAnotherScreen, color3, PROGRAM)
+                    ActionButtonWidget(openMainSongScreen, color1, MAIN_SONG),
                   ],
                 )),
           ],
         ));
   }
 
-  void openProgramScreen() {
-    print("mina");
+  void openMainSongScreen(BuildContext cxt) {
+    Navigator.of(cxt).pushNamed(MainSongScreen.ROUTE_NAME);
   }
 
-  void openAnotherScreen(BuildContext cxt) {
+  void openProgramScreen(BuildContext cxt) {
     Navigator.of(cxt).pushNamed(ProgramScreen.ROUTE_NAME);
   }
 }
