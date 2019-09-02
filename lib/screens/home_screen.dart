@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mhatb/main.dart';
 import 'package:flutter/services.dart';
 import 'package:mhatb/screens/main_song_screen.dart';
+import 'package:mhatb/screens/privacy_policy_screen.dart';
 import '../utils/ui.dart';
 import '../screens/program_screen.dart';
 import '../utils/colors.dart';
@@ -22,7 +23,18 @@ class HomeScreen extends StatelessWidget {
             child: Center(
           child: Text('MinaSamir'),
         )),
-        appBar: getAppBar(APP_NAME),
+        appBar: AppBar(
+          title: Text(APP_NAME),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.more_vert),
+              tooltip: PRIVACY_POLICY,
+              onPressed: () {
+                openPrivacyPolicyScreen(context);
+              },
+            )
+          ],
+        ),
         body: Column(
           children: <Widget>[
             QuoteWidget(),
@@ -41,6 +53,10 @@ class HomeScreen extends StatelessWidget {
                 )),
           ],
         ));
+  }
+
+  void openPrivacyPolicyScreen(BuildContext cxt) {
+    Navigator.of(cxt).pushNamed(PrivacyPolicyScreen.ROUTE_NAME);
   }
 
   void openMainSongScreen(BuildContext cxt) {
