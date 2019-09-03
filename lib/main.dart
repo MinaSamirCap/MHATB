@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import './screens/songs2_details_screen.dart';
 import './utils/resources.dart';
 import './screens/main_song_screen.dart';
 import './screens/privacy_policy_screen.dart';
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         FathersSayScreen.ROUTE_NAME: (ctx) => FathersSayScreen(),
         SongsScreen.ROUTE_NAME: (ctx) => SongsScreen(),
         Songs2Screen.ROUTE_NAME: (ctx) => Songs2Screen(),
+        Songs2DetailsScreen.ROUTE_NAME: (ctx) => Songs2DetailsScreen(),
       },
     );
   }
