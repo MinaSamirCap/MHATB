@@ -34,3 +34,4 @@ const double FONT_SIZE_18 = 18.0;
 const double FONT_SIZE_20 = 20.0;
 const double FONT_SIZE_22 = 22.0;
 const double FONT_SIZE_25 = 25.0;
+const double FONT_SIZE_45 = 45.0;

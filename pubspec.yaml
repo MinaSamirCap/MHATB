@@ -45,6 +45,13 @@ flutter:
   assets:
     - assets/images/ebarshya_logo.jpg
     - assets/images/splash.jpeg
+    - assets/images/cross.jpg
+    - assets/images/pic1.jpg
+    - assets/images/pic3.jpg
+    - assets/images/pic4.jpg
+    - assets/images/pic5.jpg
+    - assets/images/pic6.jpg
+    - assets/images/pic7.jpg
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
