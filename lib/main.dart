@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import './utils/resources.dart';
 import './screens/main_song_screen.dart';
 import './screens/privacy_policy_screen.dart';
 import './screens/home_screen.dart';
 import './screens/splash_screen.dart';
 import './screens/program_screen.dart';
-
-const APP_NAME = "MHATB";
 
 void main() => runApp(MyApp());
 

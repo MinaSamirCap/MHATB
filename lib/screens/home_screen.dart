@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mhatb/main.dart';
 import 'package:flutter/services.dart';
 import 'package:mhatb/screens/main_song_screen.dart';
 import 'package:mhatb/screens/privacy_policy_screen.dart';
-import '../utils/ui.dart';
 import '../screens/program_screen.dart';
 import '../utils/colors.dart';
 import '../utils/resources.dart';

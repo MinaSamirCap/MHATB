@@ -2,8 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mhatb/main.dart';
-
+import '../utils/resources.dart';
 import './home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -51,6 +50,13 @@ class _SplashScreenState extends State<SplashScreen> {
             child: Image.asset('assets/images/ebarshya_logo.jpg'),
           ),
         ),
+        Container(
+            height: double.infinity,
+            width: double.infinity,
+            child: Image.asset(
+              'assets/images/splash.jpeg',
+              fit: BoxFit.fill,
+            ))
       ],
     );
   }
