@@ -19,6 +19,7 @@ const double MARGIN_SIZE_10 = 10.0;
 const double MARGIN_SIZE_15 = 15.0;
 const double MARGIN_SIZE_20 = 20.0;
 const double MARGIN_SIZE_25 = 25.0;
+const double MARGIN_SIZE_35 = 35.0;
 
 const EDGE_ALL_5 = const EdgeInsets.all(MARGIN_SIZE_5);
 const EDGE_ALL_10 = const EdgeInsets.all(MARGIN_SIZE_10);

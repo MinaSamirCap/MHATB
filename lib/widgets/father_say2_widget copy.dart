@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import '../utils/sizes.dart';
 import '../utils/resources.dart';
 
-class FatherSayWidget extends StatelessWidget {
+class FatherSay2Widget extends StatelessWidget {
   final Map<String, String> item;
-  FatherSayWidget(this.item);
+  FatherSay2Widget(this.item);
 
   @override
   Widget build(BuildContext context) {
@@ -16,17 +16,17 @@ class FatherSayWidget extends StatelessWidget {
           child: Stack(
             children: <Widget>[
               Container(
-                margin: EdgeInsets.only(left: 90),
+                margin: EdgeInsets.only(right: 90),
                 child: Card(
                   elevation: 8,
                   child: Container(
                     padding: EdgeInsets.only(
                         top: MARGIN_SIZE_5,
                         bottom: 0,
-                        left: MARGIN_SIZE_15,
-                        right: 0),
+                        left: 0,
+                        right: MARGIN_SIZE_15),
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.end,
                       children: <Widget>[
                         AutoSizeText(
                           item[QUOTE_KEY],
@@ -44,6 +44,7 @@ class FatherSayWidget extends StatelessWidget {
               ),
               Positioned(
                 bottom: 0,
+                right: 0,
                 child: ClipRRect(
                   borderRadius: RADIUS_CIRCLE_15,
                   child: Image.asset(
@@ -54,7 +55,7 @@ class FatherSayWidget extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 110,
+                right: 110,
                 bottom: 5,
                 child: Text(
                   item[NAME_KEY],
