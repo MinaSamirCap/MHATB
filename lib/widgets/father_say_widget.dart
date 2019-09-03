@@ -16,7 +16,7 @@ class FatherSayWidget extends StatelessWidget {
           child: Stack(
             children: <Widget>[
               Container(
-                margin: EdgeInsets.only(left: 90),
+                margin: EdgeInsets.only(left: 50),
                 child: Card(
                   shape: RoundedRectangleBorder(
                     borderRadius: RADIUS_CIRCLE_15,
@@ -26,7 +26,7 @@ class FatherSayWidget extends StatelessWidget {
                     padding: EdgeInsets.only(
                         top: MARGIN_SIZE_5,
                         bottom: 0,
-                        left: MARGIN_SIZE_15,
+                        left: MARGIN_SIZE_45,
                         right: 0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
