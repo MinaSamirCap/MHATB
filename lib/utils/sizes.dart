@@ -14,11 +14,11 @@ final RADIUS_CIRCLE_20 = BorderRadius.circular(ROUNDED_SIZE_20);
 final RADIUS_CIRCLE_25 = BorderRadius.circular(ROUNDED_SIZE_25);
 
 /// margin and padding sizes
-const double MARGIN_SIZE_5 = 10.0;
+const double MARGIN_SIZE_5 = 5.0;
 const double MARGIN_SIZE_10 = 10.0;
-const double MARGIN_SIZE_15 = 10.0;
-const double MARGIN_SIZE_20 = 10.0;
-const double MARGIN_SIZE_25 = 10.0;
+const double MARGIN_SIZE_15 = 15.0;
+const double MARGIN_SIZE_20 = 20.0;
+const double MARGIN_SIZE_25 = 25.0;
 
 const EDGE_ALL_5 = const EdgeInsets.all(MARGIN_SIZE_5);
 const EDGE_ALL_10 = const EdgeInsets.all(MARGIN_SIZE_10);
