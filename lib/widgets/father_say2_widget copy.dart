@@ -18,6 +18,9 @@ class FatherSay2Widget extends StatelessWidget {
               Container(
                 margin: EdgeInsets.only(right: 90),
                 child: Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: RADIUS_CIRCLE_15,
+                  ),
                   elevation: 8,
                   child: Container(
                     padding: EdgeInsets.only(

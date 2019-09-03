@@ -18,6 +18,9 @@ class FatherSayWidget extends StatelessWidget {
               Container(
                 margin: EdgeInsets.only(left: 90),
                 child: Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: RADIUS_CIRCLE_15,
+                  ),
                   elevation: 8,
                   child: Container(
                     padding: EdgeInsets.only(
@@ -66,7 +69,9 @@ class FatherSayWidget extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(height: 15,)
+        SizedBox(
+          height: 15,
+        )
       ],
     );
   }

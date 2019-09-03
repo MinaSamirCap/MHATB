@@ -14,6 +14,9 @@ class ProgramWidget extends StatelessWidget {
         itemCount: list.length,
         itemBuilder: (cxt, index) {
           return Card(
+              shape: RoundedRectangleBorder(
+                borderRadius: RADIUS_CIRCLE_15,
+              ),
               elevation: 4,
               child: ListTile(
                 trailing: Text(
