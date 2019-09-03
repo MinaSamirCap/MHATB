@@ -62,7 +62,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void startTimer() {
-    Timer(Duration(milliseconds: 1500), onTimerFinished);
+    Timer(Duration(milliseconds: 2500), onTimerFinished);
   }
 
   void onTimerFinished() {
