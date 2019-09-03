@@ -42,11 +42,33 @@ class HomeScreen extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    ActionButtonWidget(openProgramScreen, color3, PROGRAM),
+                    ActionButtonWidget(openProgramScreen, color7, PROGRAM),
                     SizedBox(
                       width: 10,
                     ),
                     ActionButtonWidget(openMainSongScreen, color1, MAIN_SONG),
+                  ],
+                )),
+            Container(
+                margin: const EdgeInsets.symmetric(
+                    vertical: MARGIN_SIZE_10, horizontal: MARGIN_SIZE_10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    ActionButtonWidget(openProgramScreen, color4, SONGS),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    ActionButtonWidget(openMainSongScreen, color5, SONGS2),
+                  ],
+                )),
+            Container(
+                margin: const EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: MARGIN_SIZE_10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    ActionButtonWidget(openProgramScreen, color3, FATHERS_SAY),
                   ],
                 )),
           ],
