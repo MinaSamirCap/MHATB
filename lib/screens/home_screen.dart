@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mhatb/screens/main_song_screen.dart';
-import 'package:mhatb/screens/privacy_policy_screen.dart';
+import '../screens/fathers_say_screen.dart';
+import '../screens/main_song_screen.dart';
+import '../screens/privacy_policy_screen.dart';
+import '../screens/songs2_screen.dart';
+import '../screens/songs_screen.dart';
 import '../screens/program_screen.dart';
 import '../utils/colors.dart';
 import '../utils/resources.dart';
@@ -55,11 +58,11 @@ class HomeScreen extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    ActionButtonWidget(openProgramScreen, color4, SONGS),
+                    ActionButtonWidget(openSongsScreen, color4, SONGS),
                     SizedBox(
                       width: 10,
                     ),
-                    ActionButtonWidget(openMainSongScreen, color5, SONGS2),
+                    ActionButtonWidget(openSongs2Screen, color5, SONGS2),
                   ],
                 )),
             Container(
@@ -68,7 +71,8 @@ class HomeScreen extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    ActionButtonWidget(openProgramScreen, color3, FATHERS_SAY),
+                    ActionButtonWidget(
+                        openFathersSayScreen, color3, FATHERS_SAY),
                   ],
                 )),
           ],
@@ -85,5 +89,17 @@ class HomeScreen extends StatelessWidget {
 
   void openProgramScreen(BuildContext cxt) {
     Navigator.of(cxt).pushNamed(ProgramScreen.ROUTE_NAME);
+  }
+
+  void openSongsScreen(BuildContext cxt) {
+    Navigator.of(cxt).pushNamed(SongsScreen.ROUTE_NAME);
+  }
+
+  void openSongs2Screen(BuildContext cxt) {
+    Navigator.of(cxt).pushNamed(Songs2Screen.ROUTE_NAME);
+  }
+
+  void openFathersSayScreen(BuildContext cxt) {
+    Navigator.of(cxt).pushNamed(FathersSayScreen.ROUTE_NAME);
   }
 }

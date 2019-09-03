@@ -4,6 +4,9 @@ import './utils/resources.dart';
 import './screens/main_song_screen.dart';
 import './screens/privacy_policy_screen.dart';
 import './screens/home_screen.dart';
+import './screens/songs_screen.dart';
+import './screens/songs2_screen.dart';
+import './screens/fathers_say_screen.dart';
 import './screens/splash_screen.dart';
 import './screens/program_screen.dart';
 
@@ -28,6 +31,9 @@ class MyApp extends StatelessWidget {
         ProgramScreen.ROUTE_NAME: (ctx) => ProgramScreen(),
         MainSongScreen.ROUTE_NAME: (ctx) => MainSongScreen(),
         PrivacyPolicyScreen.ROUTE_NAME: (ctx) => PrivacyPolicyScreen(),
+        FathersSayScreen.ROUTE_NAME: (ctx) => FathersSayScreen(),
+        SongsScreen.ROUTE_NAME: (ctx) => SongsScreen(),
+        Songs2Screen.ROUTE_NAME: (ctx) => Songs2Screen(),
       },
     );
   }
