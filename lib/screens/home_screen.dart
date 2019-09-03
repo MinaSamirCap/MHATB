@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../screens/main_drawer_screen.dart';
 import '../screens/fathers_say_screen.dart';
 import '../screens/main_song_screen.dart';
 import '../screens/privacy_policy_screen.dart';
@@ -20,10 +21,7 @@ class HomeScreen extends StatelessWidget {
     /// to show status bar and navigation bar again
     SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
     return Scaffold(
-        drawer: Drawer(
-            child: Center(
-          child: Text('MinaSamir'),
-        )),
+        drawer: MainScreenDrawer(),
         appBar: AppBar(
           title: Text(APP_NAME),
           actions: <Widget>[

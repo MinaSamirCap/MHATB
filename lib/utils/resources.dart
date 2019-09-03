@@ -17,6 +17,7 @@ const DAY_3 = 'اليوم الثالث';
 const PRIVACY_POLICY = 'Privacy Policy';
 const TIME_KEY = 'time';
 const TITLE_KEY = 'title';
+const BODY_KEY = 'body';
 const DETAILS_KEY = 'details';
 
 const NAME_KEY = 'time';

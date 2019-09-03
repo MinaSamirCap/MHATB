@@ -46,7 +46,7 @@ class Songs2Screen extends StatelessWidget {
 
   void openSongs2DetailsScreen(BuildContext ctx, int index) {
     Navigator.of(ctx).pushNamed(Songs2DetailsScreen.ROUTE_NAME,
-        arguments: getCorrectSong(index));
+        arguments: {TITLE_KEY: data[index], BODY_KEY: getCorrectSong(index)});
   }
 
   String getCorrectSong(int index) {
