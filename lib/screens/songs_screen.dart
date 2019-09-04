@@ -42,43 +42,20 @@ class SongsScreen extends StatelessWidget {
   }
 
   void openSongs2DetailsScreen(BuildContext ctx, int index) {
-    Navigator.of(ctx).pushNamed(Songs2DetailsScreen.ROUTE_NAME,
-        arguments: {TITLE_KEY: data[index], BODY_KEY: getCorrectSong(index)});
+    if (index == 1 || index == 3) {
+      Navigator.of(ctx).pushNamed(Songs2DetailsScreen.ROUTE_NAME,
+          arguments: {TITLE_KEY: data[index], BODY_KEY: getCorrectSong(index)});
+    }
   }
 
   String getCorrectSong(int index) {
     switch (index) {
-      case 0:
-        return 'mina samir0';
       case 1:
-        return 'mina samir1';
-      case 2:
-        return 'mina samir2';
-        break;
+        return SO1_2;
       case 3:
-        return 'mina samir3';
-        break;
-      case 4:
-        return 'mina samir4';
-        break;
-      case 5:
-        return 'mina samir5';
-        break;
-      case 6:
-        return 'mina samir';
-        break;
-      case 7:
-        return 'mina samir';
-        break;
-      case 8:
-        return 'mina samir';
-        break;
-      case 9:
-        return 'mina samir';
-        break;
+        return SO1_4;
       default:
         return 'Error';
-        break;
     }
   }
 }
