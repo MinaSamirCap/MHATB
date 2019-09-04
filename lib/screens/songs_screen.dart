@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../screens/songs2_details_screen.dart';
+import '../screens/songs1_details_screen.dart';
 import '../utils/sizes.dart';
 import '../utils/resources.dart';
 import '../utils/ui.dart';
@@ -11,6 +13,9 @@ class SongsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
     return Scaffold(
       appBar: getAppBar(SONGS),
       body: Container(
@@ -45,6 +50,14 @@ class SongsScreen extends StatelessWidget {
     if (index == 1 || index == 3) {
       Navigator.of(ctx).pushNamed(Songs2DetailsScreen.ROUTE_NAME,
           arguments: {TITLE_KEY: data[index], BODY_KEY: getCorrectSong(index)});
+      return;
+    } else {
+      final map = (index == 0)
+          ? {TITLE_KEY: data[index], BODY_KEY: SO1_1}
+          : {TITLE_KEY: data[index], BODY_KEY: SO1_3};
+
+      Navigator.of(ctx)
+          .pushNamed(Songs1DetailsScreen.ROUTE_NAME, arguments: map);
     }
   }
 
