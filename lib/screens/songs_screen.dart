@@ -53,8 +53,18 @@ class SongsScreen extends StatelessWidget {
       return;
     } else {
       final map = (index == 0)
-          ? {TITLE_KEY: data[index], BODY_KEY: SO1_1}
-          : {TITLE_KEY: data[index], BODY_KEY: SO1_3};
+          ? {
+              TITLE_KEY: data[index],
+              BODY_KEY: SO1_1_1,
+              BODY2_KEY: SO1_1_2,
+              BODY3_KEY: SO1_1_3
+            }
+          : {
+              TITLE_KEY: data[index],
+              BODY_KEY: SO1_3_1,
+              BODY2_KEY: SO1_3_2,
+              BODY3_KEY: SO1_3_3
+            };
 
       Navigator.of(ctx)
           .pushNamed(Songs1DetailsScreen.ROUTE_NAME, arguments: map);

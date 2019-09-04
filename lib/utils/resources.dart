@@ -18,6 +18,8 @@ const PRIVACY_POLICY = 'Privacy Policy';
 const TIME_KEY = 'time';
 const TITLE_KEY = 'title';
 const BODY_KEY = 'body';
+const BODY2_KEY = 'body2';
+const BODY3_KEY = 'body3';
 const DETAILS_KEY = 'details';
 
 const NAME_KEY = 'time';
@@ -313,6 +315,16 @@ const SO1_2 =
 const SO1_4 =
     '+ أسجد لك يا ربي يسوع المسيح.\nالمجد لك الليلويا.\nالمجد لك يا الله.\n\n+ أرشدني أنا الحقير.\nالمجد لك الليلويا.\nالمجد لك يا الله.\n\n+ أطلع علينا بصلاحك.\nالمجد لك الليلويا.\nالمجد لك يا الله.\n\n+ هأنذا أنطق بلساني من أجل مجدك.\nالمجد لك الليلويا.\nالمجد لك يا الله.\n\n+ اقتل أفكاري المملوءة شراً.\nالمجد لك الليلويا.\nالمجد لك يا الله.\n\n+ تليق بك البركة والمجد والتسبيح.\nالمجد لك الليلويا.\nالمجد لك يا الله.\n\n+ كن لي معزياً في حواسي.\nالمجد لك الليلويا.\nالمجد لك يا الله.\n\n+ أنزع عنا آلام الخطايا.\nالمجد لك الليلويا.\nالمجد لك يا الله.\n\n+ زينة أرواحنا وفرح لساننا.\nالمجد لك الليلويا.\nالمجد لك يا الله.\n\n+ قدوس قدوس قدوس روحك الكلي القدس.\nالمجد لك الليلويا.\nالمجد لك يا الله.\n\n+ يا الله المتحنن والصالح.\nالمجد لك الليلويا.\nالمجد لك يا الله.\n\n+ من أجل رحمتك يا إله خلاصي.\nالمجد لك الليلويا.\nالمجد لك يا الله.\n\n+ اجعلنا مستحقين ملكوتك يا سيدنا.\nالمجد لك الليلويا.\nالمجد لك يا الله.\n\n+ يا ملكنا المسيح أسمع صلاتنا.\nالمجد لك الليلويا.\nالمجد لك يا الله.\n\n+ احرسنا يا رب من إبليس.\nالمجد لك الليلويا.\nالمجد لك يا الله.\n\n';
 
-const SO1_1 = '';
+const SO1_1_1 =
+    ' بارك إكليل السنة بصلاحك يارب الأنهار واليانبيع والزروع والثمار.\n\nباركنا في أعمالنا ببركتك السمائية وأرسل لنا من علوك نعمتك وخيراتك.\n\n المتضايقين خلصهم  والمسافرين ردهم والمربوطين حلهم والراقدين نيحهم.\n\nأرفع غضبك عنا ونجنا من الغلاء ومن فخاخ الشياطين يا معطى الخيرات.\n\n نسجد ونمجده ونرفعه بالأكثر كصلح ومحب للبشر أرحمنا كعظيم رحمتك.\n\nالليلويا (4) بارك إكليل السنة بصلاحك يارب \n\n';
+const SO1_1_2 =
+    'إسمو إى بى إكلوم انتى تى رومبى\nهيتين تيك ميت اخرستوس إبشويس\nنى ياروؤ نيم نى مومى\nنيم نى سيتى نيم نى كاربوس\n\n إسمو إيرون خين نين إهفيؤيى\n خين بيك إسمو إن إيبورانيون\nأوؤرب نان إيفول خين بيك تشيسى\nبيك إهموت نيم نيك آغاثون\n\n نى إتهيج هوج ناهمو إيفول\nنى إيطافشى إى إبشيمو ماطاستوؤ\nنيم نى إتسوته فولو إيفول\nنى إيطاف إنكوت ما إمطون نوؤ\n\n أولى إمبيك جونت ايفول هارون\nناهمين ايفول ها أو إهفون\nنيم نيفاش إنتى نى ذميون\nأو إفريفتى إن نى آغاثون\n\n تين هوس إيروف تين تى أوؤ ناف\nتينير هوؤتشيسى إمموف\nهوس آغاثوس أووه إمماف رومى\nناى نان كاطا بيك نيشتى إن ناى\n\nالليلويا (4)\nإزمو إى بى إكلوم أنتى ترومبى\nهيتين تيك ميت أخرستوس ابشويس\n\n';
+const SO1_1_3 =
+    '\Hwc `ePu qen ovhwc `mberi : \n`  wnilaoc `mmai P=x=c Pennov5 :\n ge a4gempen2ini qen pe4ovgai : \n hwc `aja0oc : ovoh `mmairwm\n\n\Tenovwrp nak `mpihvmnoc : \nqen han`cm3 `n5do7olojia : \n` w Pen=c=w=r `n`aja0oc :\n. matagron 2a 5cvntelia\n\n\Moi nan Pu `ntekhir3n3 :\n nahmen qen nengig `nte nengagi :\n ma0ebio `mpovcosni :\n. matalso `nnen 2wniovo\n\n\~Cmov `epi`xlom `nte 5rompi : \n hiten tekmet`xr3ctoc Pu : \nniiarwov nem nimovmi : . \nnem nici5 nem nikarpo\n\n`\ ~Cmov `eron qen hb3ovi :\n qen pek`cmov `n`epovranion : \novwrp nan `ebolqen peksici . :\n pek`hmot nem nek`aja0on\n\n\N3etheghwg nahmov `ebol : \nn3`etav2e `e`p2emmo matac0wov : \nnem n3etcwnh bolov `ebol : .\n n3`etavenkot ma`mton nwov\n\n\~Wli `mpekgwnt `ebolharon :\n nahmen `ebolha ov`hbwn:\n nem nifa2 `nte nidemwn : .\n `w `fre45 `nni`aja0o\n\n\Tenhwc `ero4 ten5`wov na4 : \ntenerhovo sici `mmo4 : \nhwc `aja0oc ovoh `mmairwmi : . \nnai nan kata pekni25 `nnai\n\n';
 
-const SO1_3 = '';
+const SO1_3_1 =
+    'العظيم انبا انطوني\n والبار انبا بولا \nوالقديسون الثلاثة مقارات\nانبا يوأنس القصير\n انبا بيشوي انبا بولا\nابوانا القديسان الروميين مكسيموس ودوماديوس\nانبا موسى انبا يوأنس كاما\nانبا دانيال انبا ايسيذيروس انبا باخوم\nانبا شنود\n و انبا بافنوتي انبا برسوم\n انبا تيجي \nوجميع الذين علموا بكلمة الحق باستقامة\n ، الأساقفة الأرثوذكسيين\n والقسوس والشمامسة\n والأكليروس والعلمانيون \nو هؤلاء وجميع الأرثوذكسيين امين';
+const SO1_3_2 =
+    'بي نيشتي افا انطوني\nنيم بي اثمي افا بافلي\nنيم بي شومت اثوؤاب مكاريوس\nافا يوأنس بي كولوفوس\nافا بيشوي افا بافلي\nنينيوتي اثؤواب انروميؤس مكسيموس نيم دوماديوس\nافا موسي افا يوأنس كامي\nافا دانئييل افا ايسيذيروس افا باخوم\nافا شينوتي\n كي افا بفنوتي افا برسوما\nافا تيجي\nكي بانتون طون\nاورثوذيذاكسان طون\nطون لوغون تيس اليثياس\nاورثوذكسون ابيسكوبون ابريسفيتيرون\nذياكونون اكليريكون كي لاي كون\nكي طو طون كى بانطون\nاورثوذكسون امين';
+const SO1_3_3 =
+    '/Pini25 abba Antwni : \nnem pi`0m3i abba Pavle : \nnem pi2omt e0ovab Makarioc : \nabba Iwann3c pikoloboc : \nabba Pi2wi abba Pavle : \nnenio5 =e=0=v `nrwmeoc Ma7imoc nem n3il dometioc :\n abba Mwc3 :\n abba Iwann3c Xam3 : \nabba Da: \nabba #cidwroc abba Paxwm : \nabba @enov5 : \nke abba . Pafnov5 :\n abba Parcwma : \nabba Tegi Ke pantwn twn or0odida7antwn : \nton lojon t3cal30iac : \nor0odo7wn epickopwn `precbvterwn diakonwn `kl3rikwn .\n ke laikwn ke tovtwn ke pantwn or0o7wn : \nam3n';
