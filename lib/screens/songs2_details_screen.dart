@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../utils/colors.dart';
+import '../utils/sizes.dart';
 import '../utils/ui.dart';
 import '../utils/resources.dart';
 
@@ -13,13 +15,26 @@ class Songs2DetailsScreen extends StatelessWidget {
     final body = argument[BODY_KEY];
     return Scaffold(
       appBar: getAppBar(txt),
-      body: Container(
-        child: Column(
-          children: <Widget>[
-            Text(body),
-          ],
+      body:Container(
+        margin: EDGE_ALL_10,
+        padding: EDGE_ALL_10,
+        decoration: BoxDecoration(
+            border: Border.all(color: Theme.of(context).primaryColor, width: 2),
+            borderRadius: RADIUS_CIRCLE_15),
+        
+          child: SingleChildScrollView(
+            child: Center(
+                child: Text(
+              body,
+              textDirection: TextDirection.rtl,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: FONT_SIZE_25, fontWeight: FontWeight.bold),
+            )),
+          ),
         ),
-      ),
+      
+    
     );
   }
 }

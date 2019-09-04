@@ -52,36 +52,27 @@ class Songs2Screen extends StatelessWidget {
   String getCorrectSong(int index) {
     switch (index) {
       case 0:
-        return 'mina samir0';
+        return SO2_1;
       case 1:
-        return 'mina samir1';
+        return SO2_2;
       case 2:
-        return 'mina samir2';
-        break;
+        return SO2_3;
       case 3:
-        return 'mina samir3';
-        break;
+        return SO2_4;
       case 4:
-        return 'mina samir4';
-        break;
+        return SO2_5;
       case 5:
-        return 'mina samir5';
-        break;
+        return SO2_6;
       case 6:
-        return 'mina samir';
-        break;
+        return SO2_7;
       case 7:
-        return 'mina samir';
-        break;
+        return SO2_8;
       case 8:
-        return 'mina samir';
-        break;
+        return SO2_9;
       case 9:
-        return 'mina samir';
-        break;
+        return SO2_10;
       default:
         return 'Error';
-        break;
     }
   }
 }
