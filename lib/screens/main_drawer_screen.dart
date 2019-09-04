@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mhatb/utils/sizes.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MainScreenDrawer extends StatelessWidget {
   @override
@@ -33,11 +35,31 @@ class MainScreenDrawer extends StatelessWidget {
                 'assets/images/lgna.png',
                 width: double.infinity,
               ),
-              
+              SizedBox(
+                height: 30,
+              ),
+              Card(
+                margin: EDGE_ALL_15,
+                elevation: 8,
+                child: ListTile(
+                  leading: Icon(Icons.phone),
+                  title: Text('للتواصل والاستقسار'),
+                  onTap: _launchDialBad,
+                ),
+              )
             ],
           ),
         ),
       ),
     );
+  }
+
+  void _launchDialBad() async {
+    const url = "tel:01225100644";
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 }
