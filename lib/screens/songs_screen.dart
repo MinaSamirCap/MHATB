@@ -47,25 +47,17 @@ class SongsScreen extends StatelessWidget {
   }
 
   void openSongs2DetailsScreen(BuildContext ctx, int index) {
-    if (index == 1 || index == 3) {
+    if (index == 1 || index == 3 || index == 0) {
       Navigator.of(ctx).pushNamed(Songs2DetailsScreen.ROUTE_NAME,
           arguments: {TITLE_KEY: data[index], BODY_KEY: getCorrectSong(index)});
       return;
     } else {
-      final map = (index == 0)
-          ? {
-              TITLE_KEY: data[index],
-              BODY_KEY: SO1_1_1,
-              BODY2_KEY: SO1_1_2,
-              BODY3_KEY: SO1_1_3
-            }
-          : {
-              TITLE_KEY: data[index],
-              BODY_KEY: SO1_3_1,
-              BODY2_KEY: SO1_3_2,
-              BODY3_KEY: SO1_3_3
-            };
-
+      final map = {
+        TITLE_KEY: data[index],
+        BODY_KEY: SO1_3_1,
+        BODY2_KEY: SO1_3_2,
+        BODY3_KEY: SO1_3_3
+      };
       Navigator.of(ctx)
           .pushNamed(Songs1DetailsScreen.ROUTE_NAME, arguments: map);
     }
@@ -73,6 +65,8 @@ class SongsScreen extends StatelessWidget {
 
   String getCorrectSong(int index) {
     switch (index) {
+      case 0:
+        return SO1_1_1;
       case 1:
         return SO1_2;
       case 3:
