@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:mhatb/utils/sizes.dart';
 import 'package:mhatb/utils/ui.dart';
 import '../utils/resources.dart';
@@ -8,12 +7,6 @@ class Songs1DetailsScreen extends StatelessWidget {
   static const ROUTE_NAME = '/songs1-details-screen';
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitUp,
-      DeviceOrientation.portraitDown,
-      DeviceOrientation.landscapeLeft,
-      DeviceOrientation.landscapeRight,
-    ]);
     final argument =
         ModalRoute.of(context).settings.arguments as Map<String, String>;
     final txt = argument[TITLE_KEY];
@@ -32,7 +25,9 @@ class Songs1DetailsScreen extends StatelessWidget {
                 Flexible(
                     flex: 1,
                     child: Text(body3,
-                        style: TextStyle(fontFamily: 'AvvaShenouda', fontSize: FONT_SIZE_20))),
+                        style: TextStyle(
+                            fontFamily: 'AvvaShenouda',
+                            fontSize: FONT_SIZE_20))),
                 SizedBox(
                   width: 5,
                 ),
@@ -41,7 +36,7 @@ class Songs1DetailsScreen extends StatelessWidget {
                     child: Text(
                       body2,
                       textAlign: TextAlign.center,
-                      style: TextStyle( fontSize: FONT_SIZE_20),
+                      style: TextStyle(fontSize: FONT_SIZE_20),
                     )),
                 SizedBox(
                   width: 5,
@@ -51,7 +46,7 @@ class Songs1DetailsScreen extends StatelessWidget {
                     child: Text(
                       body,
                       textDirection: TextDirection.rtl,
-                      style: TextStyle( fontSize: FONT_SIZE_20),
+                      style: TextStyle(fontSize: FONT_SIZE_20),
                     )),
               ],
             ),
